@@ -1,0 +1,18 @@
+div#lista{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+table{
+	width: 900px;
+
+}
+th{
+text-transform: uppercase;
+}
+
+th,td,tr{
+	border: solid 1px black;
+}
+

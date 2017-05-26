@@ -1,0 +1,395 @@
+/*----------------------=RESET----------------------*/
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,h2{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+html, body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+body{
+  height: auto;
+}
+
+header{
+  margin: 0 auto;
+  height: 120px;
+  /*background-color: #faf0be;*/
+}
+
+footer{
+  background-color: #E0E0E0;
+  /*Esto es para mantener la pagina anclada abajo, sujeta a ideas */
+  /*position: absolute;
+  bottom: 0px;*/
+  /*---------------------------------------------------------------*/
+  margin-top: 30px;
+  margin-left: auto;
+  width: 100%;
+  height: 100px;
+}
+/*------------------------------------------------------------------HEADER---------------------------------------------------*/
+#logo{
+  float: left;
+  width: 125px;
+  height: 80px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+#acceso{
+  float: right;
+  width: 250px;
+  margin-left: 50px;
+}
+
+#salir{
+  font-family: arial;
+  float: right;
+  width: 106px;
+  height: 40px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+#salir a{
+  padding-left: 5px;
+  border-left: 1px solid;
+  text-decoration: none;
+  color: #808080;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#salir a:hover{
+  color: #000000;
+}
+
+#registro{
+  font-family: arial;
+  float: left;
+  width: 50px;
+  height: 40px;
+  margin-left: 18px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+#registro a{
+  padding-right: 5px;
+  border-right: 1px solid;
+  text-decoration: none;
+  color: #808080;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#registro a:hover{
+  color: #000000;
+}
+
+#entrar{
+  font-family: arial;
+  float: right;
+  width: 106px;
+  height: 40px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+#entrar a{
+  padding-left: 5px;
+  border-left: 1px solid;
+  text-decoration: none;
+  color: #808080;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#entrar a:hover{
+  color: black;
+}
+
+.perfilbtn{
+  font-family: arial;
+  float: left;
+  width: 50px;
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+.perfilbtn a{
+  padding-right: 5px;
+  border-right: 1px solid;
+  text-decoration: none;
+  color: #808080;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+.perfilbtn a:hover{
+  color: #000000;
+}
+/*-------------------------------------------------MENU-------------------------------------------------------*/
+.home{
+  padding-left: 50px;
+}
+
+#fahome{
+  width: 38px;
+  height: 20px;
+
+}
+
+.menu {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    overflow: hidden;
+    font-family: Arial;
+    height: 40px;
+}
+
+.menu a {
+    float: left;
+    font-size: 16px;
+    color: Black;
+    text-align: center;
+    padding: 12px 13px;
+    text-decoration: none;
+}
+
+.navegacion {
+    float: left;
+    overflow: hidden;
+}
+
+.navegacion .botonav {
+    font-size: 1px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+}
+
+.menu a:hover, .navegacion:hover .botonav {
+    background-color: #E0E0E0;
+}
+
+.submenu {
+  margin-top: -6.3px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+}
+
+.navegacion:hover .submenu {
+    display: block;
+}
+
+.contacto {
+  float: right;
+  margin-right: 40px;
+  height: 42px;
+  font-size: 20px;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+#contenedor{
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 1500px;
+}
+
+#descuento{
+  padding-top: 100px;
+  margin: 0 auto;
+  height: 74px;
+  width: 897px;
+}
+
+#generos{
+  margin-top: 40px;
+  height: 1300px;
+}
+
+#hombre{
+  float: left;
+  margin-top: 30px;
+  margin-left: 80px;
+  width: 367px;
+  height: 540px;
+  border-style: groove;
+}
+
+#mujer{
+  float: right;
+  margin-top: 30px;
+  margin-right: 80px;
+  width: 367px;
+  height: 540px;
+  border-style: groove;
+}
+
+#junior{
+  float: left;
+  margin-bottom: 30px;
+  margin-top: 170px;
+  margin-left: 190px;
+  width: 800px;
+  height: 480px;
+  border-style: groove;
+}
+
+/*-------------------------------------------------FOOTER-----------------------------------------------------*/
+#nosotros{
+  font-weight: bold;
+  float: left;
+  font-family: arial;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#nosotros ul{
+  font-weight: normal;
+  margin-left: -40px;
+  list-style: none;
+}
+
+#nosotros ul a{
+  text-decoration: none;
+  color: black;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#nosotros ul a:hover{
+  color: #990000;
+}
+
+#social{
+  margin-top: 10px;
+  float: right;
+  font-family: arial;
+  width: 200px;
+}
+
+#twitter:hover{
+  color: #00aced;
+}
+
+#twitter{
+  float: inherit;
+  float: right;
+  color: black;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-right: 50px;
+  font-size: 40px;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#instagram:hover{
+  color: #cd486b;
+}
+
+#instagram{
+  float: right;
+  float: inherit;
+  color: black;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-right: 5px;
+  font-size: 40px;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#facebook:hover{
+  color: #3b5998;
+}
+
+#facebook{
+  float: right;
+  float: inherit;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 6px;
+  font-size: 35px;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}
+
+#github:hover{
+  color: #660066;
+}
+
+#github{
+  float: right;
+  float: inherit;
+  color: black;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-right: 5px;
+  font-size: 40px;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;"
+}

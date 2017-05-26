@@ -1,0 +1,120 @@
+/*----------------------=RESET----------------------*/
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,h2{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+html, body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------BODY-------------------------------------------------------*/
+
+header{
+  text-align: center;
+  padding-top: 100px;
+}
+
+#dios{
+  justify-content: center;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+#contenedor{
+  border-style: groove;
+  height: 480px;
+  width: 800px;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#personal{
+  background-color: #E0E0E0;
+  border-style: groove;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 220px;
+  width: 200px;
+}
+
+#cuenta{
+  background-color: #E0E0E0;
+  border-style: groove;
+  margin-top: 20px;
+  margin-left: 60px;
+  float: left;
+  height: 220px;
+  width: 200px;
+}
+
+#direc{
+  background-color: #E0E0E0;
+  border-style: groove;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  height: 220px;
+  width: 200px;
+}
+
+#botones{
+  padding-top: 350px;
+  height: 80px;
+}
+
+#botonedit{
+  font-family: arial;
+}
+
+#editar{
+  font-family: arial;
+  margin-top: 14px;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#editar:hover{
+  background-color: #4D4F4F;
+}
+
+
+#enviar{
+  margin-top: 60px;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#enviar:hover{
+  background-color: #4D4F4F;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/

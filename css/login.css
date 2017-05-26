@@ -1,0 +1,74 @@
+/*----------------------=RESET----------------------*/
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,h2{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+html, body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+header{
+  text-align: center;
+  padding-top: 100px;
+}
+
+#contenedor{
+  justify-content: center;
+  display: flex;
+}
+
+#contenido{
+  justify-content: center;
+  display: flex;
+  border-style: groove;
+  border-width: medium;
+  background-color: #E0E0E0;
+}
+
+#form{
+  text-align: center;
+  width: 250px;
+  height: 260px;
+  margin-top: 40px;
+}
+
+#error{
+  margin-bottom: 7px;
+}
+
+#usuario{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#contraseña{
+  margin-top: 14px;
+  margin-bottom: 7px;
+}
+
+#enviar{
+  margin-top: 14px;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#enviar:hover{
+  background-color: #4D4F4F;
+}
