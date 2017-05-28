@@ -260,6 +260,7 @@ footer{
 
 #objeto1{
 
+
   float: left;
   margin-bottom: 120px;
   margin-top: 50px;
@@ -279,6 +280,17 @@ height:500px;
 width:500px;
 }
 
+
+
+#imagen{
+  float: left;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 400px;
+  width: 300px;
+}
 
 
 #precio{

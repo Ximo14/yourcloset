@@ -142,6 +142,7 @@
 			}
 			
 
+
 		}else{
 			$resultado=$producto->mostrarProductosPorIDM($_GET['id']);
 			foreach ($resultado as $tabla) {
@@ -157,11 +158,16 @@
 							echo "</div>";
 							echo "<div id=informacion>";
 							echo $tabla['nombre'];
+							echo $tabla['descripcion'];
 						echo "</div>";
 						echo "</div>";
+
+
+					}
+
 				}
 			}
-		}
+		
   ?>
 <!--</div>-->
 	</body>
