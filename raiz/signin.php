@@ -59,8 +59,11 @@
 								</div>
 
 								<input type="hidden" name="rol" value="usuario">
-								<input id="enviar" type="submit" value="Siguiente">
+								<input id="enviar" type="submit" value="Registrate">
 							</form>
+							</div>
+							</div>
+					</header>
 
 					<?php
 							}
@@ -84,105 +87,145 @@
 									$resultado2=$usuario->comprobarEmail($_POST['email']);
 
 									if (($_POST['usuario']==$resultado1['usuario']) && ($_POST['email']==$resultado2['email'])) {
-										echo "Este usuario y email ya existen, por favor inserte otros";
 										?>
-										<form action="signin.php" method="post">
-											Nombre <br><input type="text" name="nombre" placeholder="Nombre..." value="<?=$_POST['nombre']?>" required><br><br>
+										<header>
+											<a href="index.php"><img src="../img/logo.jpg"></a>
+											<div id="dios">
+												<div id="contenedor">
+													Este usuario y email ya existen, por favor inserte otros
+													<h1>Registro</h1>
+													<form action="signin.php" method="post">
+														<div id="personal">
+															Nombre <br><input type="text" name="nombre" placeholder="Nombre..."  value="<?=$_POST['nombre']?>" required><br><br>
 
-											Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
+															Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
 
-											Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>" required><br><br>
+															Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>"  required><br><br>
 
-											Usuario <br><input type="text" name="usuario" placeholder="Usuario..." required><br><br>
+															Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
 
-											Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." required><br><br>
+														</div>
+														<div id="cuenta">
+															Usuario <br><input type="text" name="usuario" placeholder="Usuario..." required><br><br>
 
-											Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." value="<?=$_POST['pass1']?>" required><br><br>
+															Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." required><br><br>
 
-											Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." value="<?=$_POST['pass2']?>" required><br><br>
+															Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." required><br><br>
 
-											Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>" required><br><br>
+															Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." required><br><br>
+														</div>
+														<div id="direc">
 
-											Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
+															Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>"  required><br><br>
 
-											Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
+															Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
 
-											Población <br><input type="text" name="poblacion" placeholder="Población..." value="<?=$_POST['poblacion']?>" required><br><br>
+															Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
 
-											Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
+															Población <br><input type="text" name="poblacion" placeholder="Población..."  value="<?=$_POST['poblacion']?>" required><br><br>
+														</div>
 
-											<input type="hidden" name="rol" value="usuario">
-
-											<input type="submit" value="Registrarse">
-										</form>
+														<input type="hidden" name="rol" value="usuario">
+														<input id="enviar" type="submit" value="Registrate">
+													</form>
+													</div>
+													</div>
+											</header>
 										<?php
 								
 									}else if ($resultado2['email']==$_POST['email']) {
-										echo "Este email ya existe, por favor inserte otro";
+										
 										?>
-										<form action="signin.php" method="post">
-											Nombre <br><input type="text" name="nombre" placeholder="Nombre..." value="<?=$_POST['nombre']?>" required><br><br>
+										<header>
+											<a href="index.php"><img src="../img/logo.jpg"></a>
+											<div id="dios">
+												<div id="contenedor">
+													Este email ya existe, por favor inserte otro
+													<h1>Registro</h1>
+													<form action="signin.php" method="post">
+														<div id="personal">
+															Nombre <br><input type="text" name="nombre" placeholder="Nombre..."  value="<?=$_POST['nombre']?>" required><br><br>
 
-											Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
+															Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
 
-											Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>" required><br><br>
+															Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>"  required><br><br>
 
-											Usuario <br><input type="text" name="usuario" placeholder="Usuario..." value="<?=$_POST['usuario']?>" required><br><br>
+															Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
 
-											Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." required><br><br>
+														</div>
+														<div id="cuenta">
+															Usuario <br><input type="text" name="usuario" placeholder="Usuario..." value="<?=$_POST['usuario']?>"  required><br><br>
 
-											Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." value="<?=$_POST['pass1']?>" required><br><br>
+															Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." required><br><br>
 
-											Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." value="<?=$_POST['pass2']?>" required><br><br>
+															Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." required><br><br>
 
-											Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>" required><br><br>
+															Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." required><br><br>
+														</div>
+														<div id="direc">
 
-											Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
+															Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>"  required><br><br>
 
-											Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
+															Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
 
-											Población <br><input type="text" name="poblacion" placeholder="Población..." value="<?=$_POST['poblacion']?>" required><br><br>
+															Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
 
-											Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
+															Población <br><input type="text" name="poblacion" placeholder="Población..."  value="<?=$_POST['poblacion']?>" required><br><br>
+														</div>
 
-											<input type="hidden" name="rol" value="usuario">
-
-											<input type="submit" value="Registrarse">
-										</form>
+														<input type="hidden" name="rol" value="usuario">
+														<input id="enviar" type="submit" value="Registrate">
+													</form>
+													</div>
+													</div>
+											</header>
 										<?php
 								
 									}else if($_POST['usuario']==$resultado1['usuario']){
-										echo "El usuario ya existe";
 										?>				
-										<form action="signin.php" method="post">
-											Nombre <br><input type="text" name="nombre" placeholder="Nombre..." value="<?=$_POST['nombre']?>" required><br><br>
+										<header>
+											<a href="index.php"><img src="../img/logo.jpg"></a>
+											<div id="dios">
+												<div id="contenedor">
+													Este usuario ya existe, por favor inserte otro
+													<h1>Registro</h1>
+													<form action="signin.php" method="post">
+														<div id="personal">
+															Nombre <br><input type="text" name="nombre" placeholder="Nombre..."  value="<?=$_POST['nombre']?>" required><br><br>
 
-											Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
+															Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
 
-											Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>" required><br><br>
+															Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>"  required><br><br>
 
-											Usuario <br><input type="text" name="usuario" placeholder="Usuario..." required><br><br>
+															Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
 
-											Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." value="<?=$_POST['email']?>" required><br><br>
+														</div>
+														<div id="cuenta">
+															Usuario <br><input type="text" name="usuario" placeholder="Usuario..." required><br><br>
 
-											Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." value="<?=$_POST['pass1']?>" required><br><br>
+															Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." value="<?=$_POST['email']?>" required><br><br>
 
-											Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." value="<?=$_POST['pass2']?>" required><br><br>
+															Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." required><br><br>
 
-											Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>" required><br><br>
+															Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." required><br><br>
+														</div>
+														<div id="direc">
 
-											Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
+															Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>"  required><br><br>
 
-											Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
+															Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
 
-											Población <br><input type="text" name="poblacion" placeholder="Población..." value="<?=$_POST['poblacion']?>" required><br><br>
+															Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
 
-											Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
+															Población <br><input type="text" name="poblacion" placeholder="Población..."  value="<?=$_POST['poblacion']?>" required><br><br>
+														</div>
 
-											<input type="hidden" name="rol" value="usuario">
-
-											<input type="submit" value="Registrarse">
-										</form>
+														<input type="hidden" name="rol" value="usuario">
+														<input id="enviar" type="submit" value="Registrate">
+													</form>
+													</div>
+													</div>
+											</header>
 										<?php
 									}else{
 										if (($_POST['pass1'])==($_POST['pass2'])) {
@@ -191,37 +234,50 @@
 										echo "Usuario registrado correctamente. Entra <a href=login.php>aquí</a>";
 
 										}else{
-											echo "Las contraseñas no coinciden";
 					?>
-											<form action="signin.php" method="post">
-												Nombre <br><input type="text" name="nombre" placeholder="Nombre..." value="<?=$_POST['nombre']?>" required><br><br>
+											<header>
+											<a href="index.php"><img src="../img/logo.jpg"></a>
+											<div id="dios">
+												<div id="contenedor">
+													Las contraseñas no coinciden
+													<h1>Registro</h1>
+													<form action="signin.php" method="post">
+														<div id="personal">
+															Nombre <br><input type="text" name="nombre" placeholder="Nombre..."  value="<?=$_POST['nombre']?>" required><br><br>
 
-												Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
+															Primer apellido <br><input type="text" name="apellido1" placeholder="Primer apellido..." value="<?=$_POST['apellido1']?>" required><br><br>
 
-												Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>" required><br><br>
+															Segundo apellido <br><input type="text" name="apellido2" placeholder="Segundo apellido" value="<?=$_POST['apellido2']?>"  required><br><br>
 
-												Usuario <br><input type="text" name="usuario" placeholder="Usuario..." value="<?=$_POST['usuario']?>" required><br><br>
+															Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
 
-												Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." required><br><br>
+														</div>
+														<div id="cuenta">
+															Usuario <br><input type="text" name="usuario" placeholder="Usuario..." value="<?=$_POST['usuario']?>" required><br><br>
 
-												Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." required><br><br>
+															Correo electrónico <br><input type="email" name="email" placeholder="Correo electrónico..." value="<?=$_POST['email']?>" required><br><br>
 
-												Reeinscribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." required><br><br>
+															Contraseña <br><input type="password" name="pass1" placeholder="Contraseña..." required><br><br>
 
-												Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>" required><br><br>
+															Reescribe tu contraseña <br><input type="password" name="pass2" placeholder="Reeinscribe tu contraseña..." required><br><br>
+														</div>
+														<div id="direc">
 
-												Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
+															Dirección <br><input type="text" name="direccion" placeholder="Dirección..." value="<?=$_POST['direccion']?>"  required><br><br>
 
-												Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
+															Código Postal <br><input type="text" name="codigopostal" placeholder="Codigo postal..." value="<?=$_POST['codigopostal']?>" required><br><br>
 
-												Población <br><input type="text" name="poblacion" placeholder="Población..." value="<?=$_POST['poblacion']?>" required><br><br>
+															Ciudad <br><input type="text" name="ciudad" placeholder="Ciudad..." value="<?=$_POST['ciudad']?>" required><br><br>
 
-												Teléfono <br><input type="number" name="telefono" placeholder="Teléfono..." value="<?=$_POST['telefono']?>" required><br><br>
+															Población <br><input type="text" name="poblacion" placeholder="Población..."  value="<?=$_POST['poblacion']?>" required><br><br>
+														</div>
 
-												<input type="hidden" name="rol" value="usuario">
-
-												<input type="submit" value="Registrarse">
-											</form>
+														<input type="hidden" name="rol" value="usuario">
+														<input id="enviar" type="submit" value="Registrate">
+													</form>
+													</div>
+													</div>
+											</header>
 											<?php
 										}
 									}

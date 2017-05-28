@@ -237,6 +237,7 @@ footer{
 /*------------------------------------------------------------------------------------------------------------*/
 
 #contenedor{
+  display: inline-block;
   margin-left: 50px;
   margin-right: 50px;
   height: 1500px;
@@ -276,7 +277,7 @@ footer{
   float: left;
   margin-bottom: 30px;
   margin-top: 170px;
-  margin-left: 190px;
+  margin-left: 490px;
   width: 800px;
   height: 480px;
   border-style: groove;

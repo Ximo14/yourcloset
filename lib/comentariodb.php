@@ -1,5 +1,5 @@
 <?php
-include '../lib/db.php';
+include_once '../lib/db.php';
 /**
  *
  */

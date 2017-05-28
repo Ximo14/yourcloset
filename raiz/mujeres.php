@@ -123,36 +123,50 @@
 
 				$resultado=$producto->mostrarProductosMujeres();
 
-				if ($resultado==null) {
-					echo "<div>Ooooops!Lo sentimos, no tenemos productos en este apartado, ¡pronto obtendremos más productos!.</div>";
+				if ($resultado->num_rows==0) {
+					echo "<div id=errorM>Ooooops!Lo sentimos, no tenemos productos en este apartado, ¡pronto obtendremos más productos!.</div>";
 				}else{
 					foreach ($resultado as $tabla) {
 						if (($tabla['estado']!=2) &&
-						  	($tabla['estado']!=3) &&
-						  	($tabla['estado']!=4)) {
-								echo "<div id=objeto1>";
-					                echo "<img src=".$tabla['img']."><br>";
-					                echo $tabla['precio']."€<br>";
-					                echo $tabla['nombre'];
-           						 echo "</div>";
+							($tabla['estado']!=3) &&
+							($tabla['estado']!=4)) {
+						echo "<div id=objeto1>";
+						
+							echo "<img src=".$tabla['img']." id=imagenes><br>";
+						
+							echo "<div id=precio>";
+							echo "<b>".$tabla['precio']."€<br></b>";
+							echo "</div>";
+							echo "<div id=informacion>";
+							echo $tabla['nombre'];
+							echo $tabla['descripcion'];
+						echo "</div>";
+						echo "</div>";
+						}
 					}
 				}
-			}
 
 		}else{
 			$resultado=$producto->mostrarProductosPorIDF($_GET['id']);
 			foreach ($resultado as $tabla) {
-				if (($tabla['estado']!=2) &&
-				($tabla['estado']!=3) &&
-				($tabla['estado']!=4)) {
-					echo "<div id=objeto1>";
-						echo "<img src=".$tabla['img']."><br>";
-					    echo $tabla['precio']."€<br>";
-					    echo $tabla['nombre'];
-           			echo "</div>";
+					if (($tabla['estado']!=2) &&
+					($tabla['estado']!=3) &&
+					($tabla['estado']!=4)) {
+						echo "<div id=objeto1>";
+						echo "<div id=imagen>";
+							echo "<img src=".$tabla['img']."><br>";
+						echo "</div>";
+							echo "<div id=precio>";
+							echo "<b>".$tabla['precio']."€<br></b>";
+							echo "</div>";
+							echo "<div id=informacion>";
+							echo $tabla['nombre'];
+							echo $tabla['descripcion'];
+						echo "</div>";
+						echo "</div>";
+					}
 				}
-			}
-		}
+					}
 	?>
 	</div>
     </body>

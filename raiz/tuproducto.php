@@ -111,6 +111,7 @@
 				<table>
 					<tr>
 						<th>Producto</th>
+						<th>Tipo</th>
 						<th>Descripcion</th>
 						<th>Precio</th>
 						<th>Fecha</th>
@@ -122,7 +123,8 @@
 					$resultado = $tuproducto->mostrarTuproducto($usuario);
 					foreach ($resultado as $fila) {
 						echo "<tr>";
-							echo "<td>".$fila['id_categoria']."</td>";
+							echo "<td>".$fila['categoria']."</td>";
+							echo "<td>".$fila['nombre']."</td>";
 							echo "<td>".$fila['descripcion']."</td>";
 							echo "<td>".$fila['precio']."</td>";
 							echo "<td>".$fila['fecha']."</td>";

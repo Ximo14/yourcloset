@@ -40,12 +40,12 @@ footer{
   height: 100px;
 }
 #errorM{
-  
+
   font-size: 30px;
-  margin: 0 auto;
+  margin:auto 0;
   width: 550px;
   margin-top: 50px;
-  
+
 }
 
 /*------------------------------------------------------------------HEADER---------------------------------------------------*/
@@ -252,194 +252,56 @@ footer{
 
 #contenedor{
   display: inline-block;
-  
+
   height: 100%;
   margin-left: 200px;
   margin-right: 50px;
 }
 
 #objeto1{
-  margin-top: 100px;
-  margin-left: 80px;
+
+  float: left;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-left: 250px;
   margin-right: 100px;
-  background-color: green;
+  height: 478px;
+  width: 500px;
+}
+
+#imagenes{
+  float: left;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+height:500px;
+width:500px;
+}
+
+
+
+#precio{
+  float: right;
   
+}
+
+#informacion{
+  float: left;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   height: 400px;
   width: 300px;
 }
 
-#objeto2{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
+#precio{
   float: left;
+  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   height: 400px;
   width: 300px;
-}
-
-#objeto3{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-#objeto4{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-#objeto5{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-#objeto6{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-#objeto7{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-#objeto8{
-  margin-top: 100px;
-  margin-left: 80px;
-  background-color: green;
-  float: left;
-  height: 400px;
-  width: 300px;
-}
-
-
-/*-------------------------------------------------FOOTER-----------------------------------------------------*/
-#nosotros{
-  font-weight: bold;
-  float: left;
-  font-family: arial;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-
-#nosotros ul{
-  font-weight: normal;
-  margin-left: -40px;
-  list-style: none;
-}
-
-#nosotros ul a{
-  text-decoration: none;
-  color: black;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#nosotros ul a:hover{
-  color: #990000;
-}
-
-#social{
-  margin-top: 10px;
-  float: right;
-  font-family: arial;
-  width: 200px;
-}
-
-#twitter:hover{
-  color: #00aced;
-}
-
-#twitter{
-  float: inherit;
-  float: right;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 50px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#instagram:hover{
-  color: #cd486b;
-}
-
-#instagram{
-  float: right;
-  float: inherit;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 5px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#facebook:hover{
-  color: #3b5998;
-}
-
-#facebook{
-  float: right;
-  float: inherit;
-  color: black;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-right: 6px;
-  font-size: 35px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#github:hover{
-  color: #660066;
-}
-
-#github{
-  float: right;
-  float: inherit;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 5px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
 }

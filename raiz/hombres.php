@@ -63,7 +63,7 @@
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=hombres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -82,11 +82,11 @@
 				<button class="botonav"><a href="junior.php">Junior</a></button>
 				<div class="submenu">
 				<?php
-          
+
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 			<div class="contacto">
 				<a href="tuproducto.php">Tus productos</a>
 			</div>
-		
+
 			<?php
 			}
 			if($resultado['rol']=="admin"){
@@ -116,24 +116,31 @@
 		</div>
 		<!-- FIN BARRA DE NAVEGACION -->
 		<!-- FIN BANNER -->
+		<!--<div id="objeto1">-->
 		<?php
 		if (empty($_GET['id'])) {
 			$resultado=$producto->mostrarProductosHombres();
-			if ($resultado==null) {
+			if ($resultado->num_rows==0) {
 				echo "<div id=errorM>Ooooops!Lo sentimos, no tenemos productos en este apartado, ¡pronto obtendremos más productos!.</div>";
 			}else{
 				foreach ($resultado as $tabla) {
 					if (($tabla['estado']!=2) &&
-						($tabla['estado']!=3) &&
-						($tabla['estado']!=4)) {
-							echo "<div id=objeto1>";
+					($tabla['estado']!=3) &&
+					($tabla['estado']!=4)) {
+						echo "<div id=objeto1>";
 								echo "<img src=".$tabla['img']."><br>";
-								echo $tabla['nombre'];
-								echo $tabla['precio']."€<br>";
+							echo "<div id=precio>";
+								echo "<b>".$tabla['precio']."€<br></b>";
 							echo "</div>";
-						}
+							echo "<div id=informacion>";
+								echo $tabla['nombre'];
+								echo $tabla['descripcion'];
+						echo "</div>";
+						echo "</div>";
 					}
-			}	
+				}
+			}
+			
 
 		}else{
 			$resultado=$producto->mostrarProductosPorIDM($_GET['id']);
@@ -142,33 +149,20 @@
 					($tabla['estado']!=3) &&
 					($tabla['estado']!=4)) {
 						echo "<div id=objeto1>";
+						echo "<div id=imagen>";
 							echo "<img src=".$tabla['img']."><br>";
-							echo $tabla['precio']."€<br>";
+						echo "</div>";
+							echo "<div id=precio>";
+							echo "<b>".$tabla['precio']."€<br></b>";
+							echo "</div>";
+							echo "<div id=informacion>";
 							echo $tabla['nombre'];
 						echo "</div>";
-					}
+						echo "</div>";
 				}
+			}
 		}
   ?>
-
- 
-<!--   <div id="contenedor">
-    <div id="objeto1">
-    </div>
-    <div id="objeto2">
-    </div>
-    <div id="objeto3">
-    </div>
-    <div id="objeto4">
-    </div>
-    <div id="objeto5">
-    </div>
-    <div id="objeto6">
-    </div>
-    <div id="objeto7">
-    </div>
-    <div id="objeto8">
-    </div>
-  </div> -->
+<!--</div>-->
 	</body>
 </html>

@@ -100,7 +100,7 @@ class producto extends db
 		if ($this->hayError()==true){
 			return null;
 		}else{
-			$resultado=$this->conexion()->query("SELECT p.id_categoria,p.descripcion,p.precio,p.fecha,e.estado FROM producto p INNER JOIN estado e ON p.estado=e.id_estado WHERE p.usuario=".$usuario." ORDER BY p.fecha DESC");
+			$resultado=$this->conexion()->query("SELECT p.id_categoria,p.descripcion,p.precio,p.fecha,e.estado,c.categoria,tp.nombre FROM producto p INNER JOIN estado e INNER JOIN categoria c INNER JOIN tipo_producto tp ON p.estado=e.id_estado AND p.id_categoria=c.id_categoria AND p.id_tipoproducto=tp.id_tipoproducto WHERE p.usuario=".$usuario." ORDER BY p.fecha DESC");
 			return $resultado;
 		}
 	}
@@ -145,5 +145,6 @@ class producto extends db
 		}
 	}
 }
+
 ?>
 
