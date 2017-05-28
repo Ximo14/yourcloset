@@ -128,46 +128,45 @@
 					($tabla['estado']!=3) &&
 					($tabla['estado']!=4)) {
 						echo "<div id=objeto1>";
+							echo "<div id=imagen>";
 								echo "<img src=".$tabla['img']."><br>";
+							echo "</div>";
 							echo "<div id=precio>";
 								echo "<b>".$tabla['precio']."€<br></b>";
 							echo "</div>";
 							echo "<div id=informacion>";
-								echo $tabla['nombre'];
+								echo $tabla['nombre']."<br>";
 								echo $tabla['descripcion'];
 						echo "</div>";
 						echo "</div>";
 					}
 				}
 			}
-			
+
 
 
 		}else{
 			$resultado=$producto->mostrarProductosPorIDM($_GET['id']);
 			foreach ($resultado as $tabla) {
 				if (($tabla['estado']!=2) &&
-					($tabla['estado']!=3) &&
-					($tabla['estado']!=4)) {
-						echo "<div id=objeto1>";
+				($tabla['estado']!=3) &&
+				($tabla['estado']!=4)) {
+					echo "<div id=objeto1>";
 						echo "<div id=imagen>";
 							echo "<img src=".$tabla['img']."><br>";
 						echo "</div>";
-							echo "<div id=precio>";
+						echo "<div id=precio>";
 							echo "<b>".$tabla['precio']."€<br></b>";
-							echo "</div>";
-							echo "<div id=informacion>";
-							echo $tabla['nombre'];
+						echo "</div>";
+						echo "<div id=informacion>";
+							echo $tabla['nombre']."<br>";
 							echo $tabla['descripcion'];
-						echo "</div>";
-						echo "</div>";
-
-
-					}
-
+					echo "</div>";
+					echo "</div>";
 				}
 			}
-		
+		}
+
   ?>
 <!--</div>-->
 	</body>

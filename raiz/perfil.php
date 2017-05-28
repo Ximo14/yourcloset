@@ -9,7 +9,7 @@
 	include '../lib/usuariosdb.php';
 	$usuario = new usuario();
 	$resultado=$usuario->comprobarUser($user);
-	
+
 include '../lib/productoDB.php';
 	$producto = new producto();
 ?>
@@ -66,7 +66,7 @@ include '../lib/productoDB.php';
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=hombres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -77,7 +77,7 @@ include '../lib/productoDB.php';
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -85,11 +85,11 @@ include '../lib/productoDB.php';
 				<button class="botonav"><a href="junior.php">Junior</a></button>
 				<div class="submenu">
 				<?php
-          
+
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -105,7 +105,7 @@ include '../lib/productoDB.php';
 			<div class="contacto">
 				<a href="tuproducto.php">Tus productos</a>
 			</div>
-		
+
 			<?php
 			}
 			if($resultado['rol']=="admin"){
@@ -159,8 +159,8 @@ include '../lib/productoDB.php';
 					</form>
 		</div>
 		<?php
-		
- 		
+
+
 
  		if ((isset($_POST['nombre'])) && (!empty($_POST['nombre'])) &&
  			(isset($_POST['apellido1'])) && (!empty($_POST['apellido1'])) &&
@@ -175,25 +175,29 @@ include '../lib/productoDB.php';
 			if ($resultado['email']==$_POST['email']) {
 				//echo "El usuario no quiere cambiar el correo electrónico";
 				if ($_POST['pass']==null){
+
 					//echo "El usuario no quiere cambiar la contraseña";
 					$resultado2=$usuario->actualizarUserSinPass($_POST['nombre'],$_POST['apellido1'],$_POST['apellido2'],$_POST['email'],$_POST['direccion'],$_POST['codigopostal'],$_POST['ciudad'],$_POST['poblacion'],$_POST['telefono'],$_POST['usuario']);
-				
+				?><meta http-equiv="refresh" content="0.000001"/><?php
 				}else{
 					//echo "El usuario quiere cambiar la contraseña";
 					$resultado2=$usuario->actualizarUser($_POST['nombre'],$_POST['apellido1'],$_POST['apellido2'],$_POST['email'],$_POST['pass'],$_POST['direccion'],$_POST['codigopostal'],$_POST['ciudad'],$_POST['poblacion'],$_POST['telefono'],$_POST['usuario']);
+					?><meta http-equiv="refresh" content="0.000001"/><?php
 				}
 			}else{
 				if ($_POST['email']==$resultado2['email']) {
 					echo "El nuevo correo que ha introducio esta ocupado";
-          
+
 				}else{
 					//echo "El correo electrónico que ha introducido esta disponible";
 						if ($_POST['pass']==null) {
 							//echo "El usuario no quiere cambiar la contraseña";
 							$resultado2=$usuario->actualizarUserSinPass($_POST['nombre'],$_POST['apellido1'],$_POST['apellido2'],$_POST['email'],$_POST['direccion'],$_POST['codigopostal'],$_POST['ciudad'],$_POST['poblacion'],$_POST['telefono'],$_POST['usuario']);
+							?><meta http-equiv="refresh" content="0.000001"/><?php
 						}else{
 							//echo "El usuario quiere cambiar la contrasña";
 							$resultado2=$usuario->actualizarUser($_POST['nombre'],$_POST['apellido1'],$_POST['apellido2'],$_POST['email'],$_POST['pass'],$_POST['direccion'],$_POST['codigopostal'],$_POST['ciudad'],$_POST['poblacion'],$_POST['telefono'],$_POST['usuario']);
+							?><meta http-equiv="refresh" content="0.000001"/><?php
 						}
 				}
 			}

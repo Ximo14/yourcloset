@@ -201,7 +201,7 @@
 				Inserta la imagen del producto<br><br><input type="file" name="imagen[]"> -->
 				<input type="hidden" name="estado" value="3">
 				<input type="hidden" name="usuario" value="<?=$usuario?>">
-				<input type="submit" value="Enviar">
+				<input id="enviar" type="submit" value="Enviar">
 			</form>
 		</div>
 		<?php
@@ -217,7 +217,7 @@
 			(isset($_POST['estado'])) && (!empty($_POST['estado'])) &&
 			(isset($_POST['usuario'])) && (!empty($_POST['usuario']))){
 
-				
+
 				$imagenes=[];
 				//Rellenado de todas las imagenes
 				$numImagenes=0;
@@ -230,7 +230,7 @@
 					$imagenes[$numImagenes]["tmp_name"]=$tmp_name;
 					$numImagenes++;
 				}
-				
+
 
 				foreach($imagenes as $imagen){
 				$name = basename(rand(0,100).$imagen["name"]);

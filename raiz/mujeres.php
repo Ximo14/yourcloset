@@ -63,7 +63,7 @@
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=hombres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -82,11 +82,11 @@
 				<button class="botonav"><a href="junior.php">Junior</a></button>
 				<div class="submenu">
 				<?php
-          
+
 					$resultado1=$producto->mostrarCategoria();
 					foreach ($resultado1 as $link) {
 						echo "<a href=mujeres.php?id=".$link['id_categoria'].">".$link['categoria']."</a>";
-					} 
+					}
 				?>
 				</div>
 			</div>
@@ -128,20 +128,20 @@
 				}else{
 					foreach ($resultado as $tabla) {
 						if (($tabla['estado']!=2) &&
-							($tabla['estado']!=3) &&
-							($tabla['estado']!=4)) {
-						echo "<div id=objeto1>";
-						
-							echo "<img src=".$tabla['img']." id=imagenes><br>";
-						
-							echo "<div id=precio>";
-							echo "<b>".$tabla['precio']."€<br></b>";
+						($tabla['estado']!=3) &&
+						($tabla['estado']!=4)) {
+							echo "<div id=objeto1>";
+								echo "<div id=imagen>";
+									echo "<img src=".$tabla['img']."><br>";
+								echo "</div>";
+								echo "<div id=precio>";
+									echo "<b>".$tabla['precio']."€<br></b>";
+								echo "</div>";
+								echo "<div id=informacion>";
+									echo $tabla['nombre']."<br>";
+									echo $tabla['descripcion'];
 							echo "</div>";
-							echo "<div id=informacion>";
-							echo $tabla['nombre'];
-							echo $tabla['descripcion'];
-						echo "</div>";
-						echo "</div>";
+							echo "</div>";
 						}
 					}
 				}
@@ -149,24 +149,24 @@
 		}else{
 			$resultado=$producto->mostrarProductosPorIDF($_GET['id']);
 			foreach ($resultado as $tabla) {
-					if (($tabla['estado']!=2) &&
-					($tabla['estado']!=3) &&
-					($tabla['estado']!=4)) {
-						echo "<div id=objeto1>";
+				if (($tabla['estado']!=2) &&
+				($tabla['estado']!=3) &&
+				($tabla['estado']!=4)) {
+					echo "<div id=objeto1>";
 						echo "<div id=imagen>";
 							echo "<img src=".$tabla['img']."><br>";
 						echo "</div>";
-							echo "<div id=precio>";
+						echo "<div id=precio>";
 							echo "<b>".$tabla['precio']."€<br></b>";
-							echo "</div>";
-							echo "<div id=informacion>";
-							echo $tabla['nombre'];
+						echo "</div>";
+						echo "<div id=informacion>";
+							echo $tabla['nombre']."<br>";
 							echo $tabla['descripcion'];
-						echo "</div>";
-						echo "</div>";
-					}
+					echo "</div>";
+					echo "</div>";
 				}
-					}
+			}
+		}
 	?>
 	</div>
     </body>
