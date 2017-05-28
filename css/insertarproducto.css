@@ -17,7 +17,6 @@ html, body {
 }
 
 /*----------------------------------------------------------------------------------*/
-
 body{
   height: auto;
 }
@@ -235,135 +234,27 @@ footer{
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
-#info{
-  margin-top: 30px;
-  width: 300px;
+/*-------------------------------------------------BODY-------------------------------------------------------*/
+
+#dios{
+  margin-top: 70px;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+#contenedor{
+  border-style: groove;
+  height: 480px;
+  width: 800px;
+  justify-content: center;
+}
+
+#producto{
+  float: left;
+}
+
+#tipo{
   float: right;
-  margin-right: 150px;
-}
-.mapa{
-  margin-left: 50px;
-   margin-top: 30px;
-  float: left;
-  width: 700px;
-}
-#comentario{
-  margin-top: 470px;
-  margin-left: 50px;
-}
-
-#editar{
-  font-family: arial;
-  margin-top: 14px;
-  background-color: #555555;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-#enviar{
-  margin-top: 30px;
-  margin-left: 250px;
-  margin-bottom: 30px;
-  background-color: #555555;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-#enviar:hover{
-  background-color: #4D4F4F;
-}
-
-
-#cajita{
-  margin-top: 15px;
-  margin-left: 20px;
-}
-/*-------------------------------------------------FOOTER-----------------------------------------------------*/
-
-
-#twitter:hover{
-  color: #00aced;
-}
-
-#twitter{
-
-  float: inherit;
-  float: left;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 6px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#instagram:hover{
-  color: #cd486b;
-}
-
-#instagram{
-  float: right;
-  float: left;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 5px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#facebook:hover{
-  color: #3b5998;
-}
-
-#facebook{
-  float: right;
-  float: left;
-  color: black;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-right: 6px;
-  font-size: 35px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
-}
-
-#github:hover{
-  color: #660066;
-}
-
-#github{
-  float: right;
-  float: left;
-  color: black;
-  text-decoration: none;
-  margin-top: 7px;
-  margin-right: 5px;
-  font-size: 40px;
-  -o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;"
 }
